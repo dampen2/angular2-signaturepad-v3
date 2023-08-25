@@ -1,4 +1,4 @@
-# angular2-signaturepad
+# angular-signature-pad-v2
 Angular 14+ component for [szimek/signature_pad](https://www.npmjs.com/package/signature_pad).
 
 # Get the right version
@@ -28,7 +28,7 @@ The above options are provided to avoid accessing the DOM directly from your com
 
 // import into app module
 
-import { SignaturePadModule } from 'angular2-signaturepad';
+import { SignaturePadModule } from 'angular-signature-pad-v2';
 
 ...
 
@@ -42,7 +42,7 @@ import { SignaturePadModule } from 'angular2-signaturepad';
 // then import for use in a component
 
 import { Component, ViewChild } from 'angular2/core';
-import { SignaturePad } from 'angular2-signaturepad/signature-pad';
+import { SignaturePad } from 'angular-signature-pad-v2';
 
 @Component({
   template: '<signature-pad [options]="signaturePadOptions" (onBeginEvent)="drawStart()" (onEndEvent)="drawComplete()"></signature-pad>'
