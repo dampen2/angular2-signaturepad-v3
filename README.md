@@ -1,6 +1,9 @@
 # angular2-signaturepad
 Angular 2 component for [szimek/signature_pad](https://www.npmjs.com/package/signature_pad).
 
+# Get the right version
+- Angular 14/ CLI 14: angular2-signaturepad@^5.0.0
+
 # No Longer Maintained
 << THIS IS NO LONGER IN USE BY OWNER. PROBLEMS CAN AND DO EXIST. PRs ARE SUPER WELCOME, BUT I CAN NOT IDENTIFY WHAT YOUR ISSUES ARE, NOR WILL I CHANGE THINGS BECAUSE ANGULAR HAS CHANGED IN THE YEARS SINCE I WROTE THIS. I DO NOT USE THIS, I CAN'T HELP YOU WITH YOUR PROBLEMS. >>
 
