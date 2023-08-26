@@ -4,8 +4,8 @@ Angular 14+ component for [szimek/signature_pad](https://www.npmjs.com/package/s
 # Get the right version
 - Angular 14/ CLI 14: angular-signature-pad-v2@^5.0.0
 
-
-<< THIS IS NO LONGER IN USE BY OWNER. PROBLEMS CAN AND DO EXIST. PRs ARE SUPER WELCOME, BUT I CAN NOT IDENTIFY WHAT YOUR ISSUES ARE, NOR WILL I CHANGE THINGS BECAUSE ANGULAR HAS CHANGED IN THE YEARS SINCE I WROTE THIS >>
+# Maintenance
+- update only major version of angular  
 
 ## Install
 `npm install angular-signature-pad-v2 --save`
@@ -79,3 +79,5 @@ export class SignaturePadPage{
   }
 }
 ```
+# Credit 
+- special thanks to szimzk and wulfsolte

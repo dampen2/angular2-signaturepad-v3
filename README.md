@@ -4,8 +4,8 @@ Angular 14+ component for [szimek/signature_pad](https://www.npmjs.com/package/s
 # Get the right version
 - Angular 14/ CLI 14: angular-signature-pad-v2@^5.0.0
 
-# No Longer Maintained
-<< THIS IS NO LONGER IN USE BY OWNER. PROBLEMS CAN AND DO EXIST. PRs ARE SUPER WELCOME, BUT I CAN NOT IDENTIFY WHAT YOUR ISSUES ARE, NOR WILL I CHANGE THINGS BECAUSE ANGULAR HAS CHANGED IN THE YEARS SINCE I WROTE THIS. I DO NOT USE THIS, I CAN'T HELP YOU WITH YOUR PROBLEMS. >>
+# Maintenance
+- update only major version of angular  
 
 ## Install
 `npm install angular-signature-pad-v2 --save`
@@ -52,7 +52,7 @@ export class SignaturePadPage{
 
   @ViewChild(SignaturePad) signaturePad: SignaturePad;
 
-  signaturePadOptions: Object = { // passed through to szimek/signature_pad constructor
+  private signaturePadOptions: Object = { // passed through to szimek/signature_pad constructor
     'minWidth': 5,
     'canvasWidth': 500,
     'canvasHeight': 300
@@ -79,3 +79,5 @@ export class SignaturePadPage{
   }
 }
 ```
+# Credit 
+- special thanks to szimzk and wulfsolte
