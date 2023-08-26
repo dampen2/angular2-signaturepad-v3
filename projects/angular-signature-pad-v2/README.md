@@ -4,11 +4,12 @@ Angular 14+ component for [szimek/signature_pad](https://www.npmjs.com/package/s
 # Get the right version
 - Angular 14/ CLI 14: angular-signature-pad-v2@^5.0.0
 - Angular 15/ CLI 15: angular-signature-pad-v2@^6.0.0
+- Angular 16/ CLI 16: angular-signature-pad-v2@^7.0.0
 # Maintenance
 - update only major version of angular  
 
 ## Install
-`npm install angular-signature-pad-v2@6.0.0 --save`
+`npm install angular-signature-pad-v2@7.0.0 --save`
 
 ## Reference Implementation
 
