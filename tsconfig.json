@@ -9,15 +9,19 @@
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
-    "target": "ES2015",
-    "module": "ES2015",
-    "lib": ["es2018", "dom"],
+    "target": "ES2022",
+    "module": "ES2020",
+    "lib": [
+      "es2018",
+      "dom"
+    ],
     "paths": {
       "angular2-signaturepad": [
         "dist/angular-signature-pad-v2/angular-signature-pad-v2",
         "dist/angular-signature-pad-v2"
       ]
-    }
+    },
+    "useDefineForClassFields": false
   },
   "angularCompilerOptions": {}
 }
