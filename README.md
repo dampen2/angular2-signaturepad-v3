@@ -83,4 +83,4 @@ export class SignaturePadPage{
 }
 ```
 # Credit 
-- special thanks to szimzk, wulfsolte and aditya-singh-07
+- special thanks to szimzk, wulfsolte and Aditya Singh
