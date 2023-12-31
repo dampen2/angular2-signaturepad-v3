@@ -10,7 +10,7 @@ Angular 14+ component for [szimek/signature_pad](https://www.npmjs.com/package/s
 - update only major version of angular  
 
 ## Install
-`npm install angular-signature-pad-v2@7.0.0 --save`
+`npm install angular-signature-pad-v2@8.0.0 --save`
 
 ## Reference Implementation
 
