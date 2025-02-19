@@ -21,6 +21,7 @@ export type PointGroup = Array<Point>;
 @Component({
   template: '<canvas></canvas>',
   selector: 'signature-pad',
+  standalone: true
 })
 export class SignaturePad implements AfterContentInit, OnDestroy {
   @Input() public options: any;
