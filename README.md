@@ -6,16 +6,17 @@ Angular 14+ component for [szimek/signature_pad](https://www.npmjs.com/package/s
 - Angular 15/ CLI 15: angular-signature-pad-v2@^6.0.0
 - Angular 16/ CLI 16: angular-signature-pad-v2@^7.0.0
 - Angular 17/ CLI 17: angular-signature-pad-v2@^8.0.0
+- Angular 18/ CLI 18: angular-signature-pad-v2@^9.0.0
 
 # Maintenance
 - update only major version of angular  
 
 ## Install
-`npm install angular-signature-pad-v2@8.0.0 --save`
+`npm install angular-signature-pad-v2@9.0.0 --save`
 
 ## Reference Implementation
 
-* [Live Demo](http://lathonez.com/angular2-signaturepad-demo/)
+* [Live Demo](https://aditya-singh-07.github.io/signature-test/)
 * [Demo Project](https://github.com/aditya-singh-07/signature-test)
 * [Source](https://github.com/lathonez/angular2-signaturepad-demo)
 
