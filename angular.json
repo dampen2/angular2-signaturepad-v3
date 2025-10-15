@@ -3,30 +3,30 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "@aditya/angular-signature-pad-v2": {
+    "@dampen2/angular-signature-pad-v3": {
       "projectType": "library",
-      "root": "projects/angular-signature-pad-v2",
-      "sourceRoot": "projects/angular-signature-pad-v2/src",
+      "root": "projects/angular-signature-pad-v3",
+      "sourceRoot": "projects/angular-signature-pad-v3/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular/build:ng-packagr",
           "options": {
-            "tsConfig": "projects/angular-signature-pad-v2/tsconfig.lib.json",
-            "project": "projects/angular-signature-pad-v2/ng-package.json"
+            "tsConfig": "projects/angular-signature-pad-v3/tsconfig.lib.json",
+            "project": "projects/angular-signature-pad-v3/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/angular-signature-pad-v2/tsconfig.lib.prod.json"
+              "tsConfig": "projects/angular-signature-pad-v3/tsconfig.lib.prod.json"
             }
           }
         },
         "test": {
           "builder": "@angular/build:karma",
           "options": {
-            "main": "projects/angular-signature-pad-v2/src/test.ts",
-            "tsConfig": "projects/angular-signature-pad-v2/tsconfig.spec.json",
-            "karmaConfig": "projects/angular-signature-pad-v2/karma.conf.js"
+            "main": "projects/angular-signature-pad-v3/src/test.ts",
+            "tsConfig": "projects/angular-signature-pad-v3/tsconfig.spec.json",
+            "karmaConfig": "projects/angular-signature-pad-v3/karma.conf.js"
           }
         }
       }
