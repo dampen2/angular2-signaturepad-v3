@@ -1,12 +1,12 @@
 {
-  "name": "angular-signature-pad-v2",
-  "version": "10.0.0",
-  "description": "angular-signature-pad-v2 Component wrapper for szimek / signature_pad",
-  "homepage": "https://github.com/aditya-singh-07/angular2-signaturepad.git",
-  "bugs": "https://github.com/aditya-singh-07/angular2-signaturepad/issues",
+  "name": "@dampen2/angular-signature-pad-v3",
+  "version": "11.0.0",
+  "description": "angular-signature-pad-v3 Component wrapper for szimek / signature_pad",
+  "homepage": "https://github.com/dampen2/angular2-signaturepad-v3",
+  "bugs": "https://github.com/dampen2/angular2-signaturepad-v3/issues",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aditya-singh-07/angular2-signaturepad.git"
+    "url": "git+https://github.com/dampen2/angular2-signaturepad-v3.git"
   },
   "keywords": [
     "angular-signature-pad",
@@ -16,11 +16,11 @@
     "finger",
     "canvas"
   ],
-  "author": "Wulf Solter <wulf@wulf.co.nz> (http://wulf.co.nz) & Aditya Singh",
+  "author": "Wulf Solter <wulf@wulf.co.nz> (http://wulf.co.nz) & Aditya Singh & Dampen2",
   "license": "MIT",
   "peerDependencies": {
-    "@angular/common": "^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0 || ^12.0.0 || ^13.0.0 || ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0",
-    "@angular/core": "^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0 || ^12.0.0 || ^13.0.0 || ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0",
+    "@angular/common": "^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0 || ^12.0.0 || ^13.0.0 || ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 || ^20.0.0",
+    "@angular/core": "^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0 || ^12.0.0 || ^13.0.0 || ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 || ^20.0.0",
     "signature_pad": "2.3.2"
   },
   "dependencies": {

@@ -3,8 +3,8 @@ import { SignaturePad } from './signature-pad';
 
 @NgModule({
   imports: [ ],
-  declarations: [ SignaturePad ],
-  exports: [ SignaturePad ],
+  declarations: [  ],
+  exports: [  ],
 })
 
 export class SignaturePadModule { }
