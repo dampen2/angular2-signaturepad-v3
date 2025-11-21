@@ -1,4 +1,4 @@
-# angular-signature-pad-v2
+# angular-signature-pad-v3
 Angular 14+ component for [szimek/signature_pad](https://www.npmjs.com/package/signature_pad).
 
 # Get the right version
