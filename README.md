@@ -8,18 +8,17 @@ Angular 14+ component for [szimek/signature_pad](https://www.npmjs.com/package/s
 - Angular 17/ CLI 17: angular-signature-pad-v2@^8.0.0
 - Angular 18/ CLI 18: angular-signature-pad-v2@^9.0.0
 - Angular 19/ CLI 19: angular-signature-pad-v2@^10.0.0
+- Angular 20/ CLI 20: angular-signature-pad-v3@^11.0.0
 
 # Maintenance
 - update only major version of angular  
 
 ## Install
-`npm install angular-signature-pad-v2@10.0.0 --save`
+`npm i @dampen2/angular-signature-pad-v3`
 
 ## Reference Implementation
 
-* [Live Demo](https://aditya-singh-07.github.io/signature-test/)
-* [Demo Project](https://github.com/aditya-singh-07/signature-test)
-* [Source](https://github.com/lathonez/angular2-signaturepad-demo)
+ - This is a fork of szimek/signature_pad
 
 ## Usage example
 
@@ -34,7 +33,7 @@ The above options are provided to avoid accessing the DOM directly from your com
 
 // import into app module
 
-import { SignaturePadModule } from 'angular-signature-pad-v2';
+import { SignaturePadModule } from 'angular-signature-pad-v3';
 
 ...
 
