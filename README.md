@@ -9,7 +9,7 @@ Angular 14+ component for [szimek/signature_pad](https://www.npmjs.com/package/s
 - Angular 18/ CLI 18: @dampen2/angular-signature-pad-v3@^9.0.0
 - Angular 19/ CLI 19: @dampen2/angular-signature-pad-v3@^10.0.0
 - Angular 20/ CLI 20: @dampen2/angular-signature-pad-v3@^11.0.0
-
+- Angular 21/ CLI 21: @dampen2/angular-signature-pad-v3@^12.0.0
 # Maintenance
 - update only major version of angular  
 
