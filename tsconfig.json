@@ -11,10 +11,6 @@
     "importHelpers": true,
     "target": "ES2022",
     "module": "ES2022",
-    "lib": [
-      "es2018",
-      "dom"
-    ],
     "paths": {
       "angular2-signaturepad": [
         "dist/angular-signature-pad-v2/angular-signature-pad-v2",
