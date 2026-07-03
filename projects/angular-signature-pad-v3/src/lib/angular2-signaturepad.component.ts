@@ -6,6 +6,7 @@ import {
   Input,
   Output,
   OnDestroy,
+  ChangeDetectionStrategy
 } from '@angular/core';
 
 import * as SignaturePadNative from 'signature_pad';
@@ -21,6 +22,7 @@ export type PointGroup = Array<Point>;
 @Component({
   template: '<canvas></canvas>',
   selector: 'signature-pad',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: true
 })
 export class SignaturePad implements AfterContentInit, OnDestroy {

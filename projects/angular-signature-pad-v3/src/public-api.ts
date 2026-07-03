@@ -1,3 +1,5 @@
+/// <reference path="./types/signature_pad.d.ts" />
+
 /*
  * Public API Surface of angular2-signaturepad
  */
