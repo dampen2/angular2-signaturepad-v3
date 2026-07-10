@@ -7,14 +7,23 @@ declare module 'signature_pad' {
     backgroundColor?: string;
     penColor?: string;
     velocityFilterWeight?: number;
-    onBegin?: (event: MouseEvent | TouchEvent) => void;
-    onEnd?: (event: MouseEvent | TouchEvent) => void;
     [option: string]: any;
   }
+
+  export interface SignatureEvent {
+    event: MouseEvent | TouchEvent | PointerEvent;
+    type: string;
+    x: number;
+    y: number;
+    pressure: number;
+  }
+
+  export type SignaturePadEventName = 'beginStroke' | 'endStroke' | 'beforeUpdateStroke' | 'afterUpdateStroke';
 
   export interface Point {
     x: number;
     y: number;
+    pressure?: number;
     time: number;
   }
 
@@ -22,11 +31,10 @@ declare module 'signature_pad' {
 
   export default class SignaturePad {
     public canvas: HTMLCanvasElement;
-    public onBegin?: (event: MouseEvent | TouchEvent) => void;
-    public onEnd?: (event: MouseEvent | TouchEvent) => void;
 
     constructor(canvas: HTMLCanvasElement, options?: SignaturePadOptions);
 
+    public addEventListener(type: SignaturePadEventName, listener: EventListenerOrEventListenerObject | null, options?: boolean | AddEventListenerOptions): void;
     public clear(): void;
     public fromData(pointGroups: PointGroup[]): void;
     public fromDataURL(dataUrl: string, options?: any): void;
@@ -35,6 +43,7 @@ declare module 'signature_pad' {
     public on(): void;
     public toData(): PointGroup[];
     public toDataURL(type?: string, encoderOptions?: number): string;
+    public removeEventListener(type: SignaturePadEventName, callback: EventListenerOrEventListenerObject | null, options?: boolean | EventListenerOptions): void;
     [property: string]: any;
   }
 }

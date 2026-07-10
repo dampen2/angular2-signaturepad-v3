@@ -77,12 +77,12 @@ export class SignaturePadPage{
   }
 
   drawComplete() {
-    // will be notified of szimek/signature_pad's onEnd event
+    // will be notified of szimek/signature_pad's endStroke event
     console.log(this.signaturePad.toDataURL());
   }
 
   drawStart() {
-    // will be notified of szimek/signature_pad's onBegin event
+    // will be notified of szimek/signature_pad's beginStroke event
     console.log('begin drawing');
   }
 }

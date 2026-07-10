@@ -33,6 +33,14 @@ export class SignaturePad implements AfterContentInit, OnDestroy {
   private signaturePad: any;
   private elementRef: ElementRef;
 
+  private handleBeginStroke = (): void => {
+    this.onBegin();
+  };
+
+  private handleEndStroke = (): void => {
+    this.onEnd();
+  };
+
   constructor(elementRef: ElementRef) {
     // no op
     this.elementRef = elementRef;
@@ -53,14 +61,51 @@ export class SignaturePad implements AfterContentInit, OnDestroy {
     }
 
     this.signaturePad = new SignaturePadNative.default(canvas, this.options);
-    this.signaturePad.onBegin = this.onBegin.bind(this);
-    this.signaturePad.onEnd = this.onEnd.bind(this);
+    this.bindSignatureEvents();
   }
 
   public ngOnDestroy(): void {
+    this.unbindSignatureEvents();
+
+    if (this.signaturePad && typeof this.signaturePad.off === 'function') {
+      this.signaturePad.off();
+    }
+
     const canvas: any = this.elementRef.nativeElement.querySelector('canvas');
-    canvas.width = 0;
-    canvas.height = 0;
+    if (canvas) {
+      canvas.width = 0;
+      canvas.height = 0;
+    }
+  }
+
+  private bindSignatureEvents(): void {
+    if (!this.signaturePad) {
+      return;
+    }
+
+    if (typeof this.signaturePad.addEventListener === 'function') {
+      this.signaturePad.addEventListener('beginStroke', this.handleBeginStroke);
+      this.signaturePad.addEventListener('endStroke', this.handleEndStroke);
+      return;
+    }
+
+    this.signaturePad.onBegin = this.handleBeginStroke;
+    this.signaturePad.onEnd = this.handleEndStroke;
+  }
+
+  private unbindSignatureEvents(): void {
+    if (!this.signaturePad) {
+      return;
+    }
+
+    if (typeof this.signaturePad.removeEventListener === 'function') {
+      this.signaturePad.removeEventListener('beginStroke', this.handleBeginStroke);
+      this.signaturePad.removeEventListener('endStroke', this.handleEndStroke);
+      return;
+    }
+
+    this.signaturePad.onBegin = undefined;
+    this.signaturePad.onEnd = undefined;
   }
 
   public resizeCanvas(): void {
